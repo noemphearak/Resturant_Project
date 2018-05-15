@@ -19,6 +19,6 @@ public class TableRestaurant {
 	}
 	
 	public String toString() {
-		return "Id: "+ id +" Num Seat: "+ numSeat +" Available: "+ available;
+		return "'Table#"+ id+"'"+ "\t" +"'Seats:"+ numSeat+"'"+ "\t\t"+ getOccupled();
 	}
 }
