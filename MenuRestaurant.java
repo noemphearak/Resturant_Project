@@ -6,9 +6,9 @@ public class MenuRestaurant {
 	// TODO Create object from each class
 	private List<TableRestaurant> listTables 	= new ArrayList<TableRestaurant>();
 	private List<FoodRestaurant>  listFoods		= new ArrayList<FoodRestaurant>();
-	private ReservationRestaurant	reservation	= new ReservationRestaurant();
 	private List<ReservationRestaurant> listReservations	= new ArrayList<ReservationRestaurant>();
 	private List<OrderRestaurant> listOrders	= new ArrayList<OrderRestaurant>();
+	private Scanner scanner						= new Scanner(System.in);
 	
 	// TODO constructor for init what run first in program
 	public MenuRestaurant() {
@@ -74,6 +74,7 @@ public class MenuRestaurant {
 	// TODO method end menu 
 	public void endMenu() {
 		System.out.println("======================================= Thank you ===================================");
+		
 	}
 	
 	// TODO error message
@@ -85,11 +86,26 @@ public class MenuRestaurant {
 	
 	// TODO all method for each function restaurant
 	public void createNewTable() {
-		
+		int numSeat;
+		String id;
+		String enterd = "";
+		System.out.println("   ================================ Create New Table =============================");
+		do {
+			System.out.print("Enter table No: "); id = scanner.nextLine();
+			System.out.print("Enter number of Seats: "); numSeat = scanner.nextInt(); scanner.nextLine();
+			listTables.add(new TableRestaurant(numSeat, id, false));
+			System.out.print("Do you want to add more table? [Yes/No]: "); enterd = scanner.nextLine();
+		}while(!enterd.equals("no"));
+		if(enterd.equals("no")) {
+			System.out.println("Table created!!!");
+		}
 	}
 	
 	public void listAllTable() {
-		
+		System.out.println("====================================== All Table ====================================");
+		for(TableRestaurant table : listTables) {
+			System.out.println(table.toString());
+		}
 	}
 
 	public void createNewFood() {
