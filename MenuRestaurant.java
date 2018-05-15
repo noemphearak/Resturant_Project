@@ -102,9 +102,18 @@ public class MenuRestaurant {
 	}
 	
 	public void listAllTable() {
+		String continues = "";
 		System.out.println("====================================== All Table ====================================");
-		for(TableRestaurant table : listTables) {
-			System.out.println(table.toString());
+		do {
+			System.out.println("["+ "No"+ "\t\t"+ "Number of Seat"+ "\t\t"+ "Status"+"]");
+			for(TableRestaurant table : listTables) {
+				System.out.println(table.toString());
+			}
+			System.out.print("Do you want continue to Main Menu?[Yes/No]: "); continues = scanner.nextLine();
+		}while(!continues.equals("no"));
+		if(continues.equals("no")) {
+			endMenu();
+			System.exit(0);
 		}
 	}
 
