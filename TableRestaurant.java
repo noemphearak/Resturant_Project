@@ -19,6 +19,6 @@ public class TableRestaurant {
 	}
 	
 	public String toString() {
-		return "Num Seat: "+ numSeat +" Id: "+ id +" Available: "+ available;
+		return "Id: "+ id +" Num Seat: "+ numSeat +" Available: "+ available;
 	}
 }
