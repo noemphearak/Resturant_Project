@@ -25,4 +25,10 @@ public class ReservationRestaurant implements InterfaceRestaurant{
 		
 	}
 
+	@Override
+	public void create(FoodRestaurant food) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
