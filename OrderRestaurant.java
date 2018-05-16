@@ -12,42 +12,47 @@ public class OrderRestaurant implements InterfaceRestaurant{
 		this.table	= tables;
 	}
 	
+	@Override
 	public void create(FoodRestaurant food) {
 		
 	}
 
+	@Override
 	public void read(List<FoodRestaurant> read) {
 
 	}
 
+	@Override
 	public void update(FoodRestaurant update) {
 		
 	}
 
+	@Override
 	public void delete(FoodRestaurant delete) {
 		
 	}
-	
+
+	@Override
+	public void create(BookingRestaurant add) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
 	public void read(ArrayList<BookingRestaurant> bookLists) {
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void read() {
-		
-	}
-	@Override
-	public void update() {
-		
-	}
-	@Override
-	public void delete() {
+	public void update(BookingRestaurant update) {
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void create() {
+	public void delete(BookingRestaurant delete) {
+		// TODO Auto-generated method stub
 		
 	}
-
 }
