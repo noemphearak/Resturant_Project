@@ -11,6 +11,6 @@ public class FoodRestaurant {
 	}
 	
 	public String toString() {
-		return "ID: "+ id +" Food name: "+ name +" Price: "+ price;  
+		return "'00"+ id +"'"+ "\t\t"+ "'"+ name +"'"+ "\t\t\t"+ "'"+ price +"'";  
 	}
 }
