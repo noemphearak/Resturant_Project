@@ -60,15 +60,17 @@ public class MenuRestaurant {
 	// TODO Menu restaurant
 	public void mainMenu() {
 		System.out.println("================================ Restaurant Reservation =============================");
-        System.out.println("1). New Table ");
-        System.out.println("2). List of Table");
-        System.out.println("3). New Food");
-        System.out.println("4). Lists of Foods");
-        System.out.println("5). Take Reservation");
-        System.out.println("6). List of Reservation");
-        System.out.println("7). Take Order");
-        System.out.println("8). List of Order");
-        System.out.println("9). Exit program");
+		System.out.println("-----------------------------");
+    System.out.println("| 1). New Table		    |");
+        System.out.println("| 2). List of Table	    |");
+        System.out.println("| 3). New Food		    |");
+        System.out.println("| 4). Lists of Foods	    |");
+        System.out.println("| 5). Take Reservation	    |");
+        System.out.println("| 6). List of Reservation   |");
+        System.out.println("| 7). Take Order	    |");
+        System.out.println("| 8). List of Order         |");
+        System.out.println("| 9). Exit program          |");
+        System.out.println("-----------------------------");
 	}
 	
 	// TODO method end menu 
