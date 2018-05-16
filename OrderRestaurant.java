@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class OrderRestaurant implements InterfaceRestaurant{
@@ -10,32 +11,42 @@ public class OrderRestaurant implements InterfaceRestaurant{
 		this.id		= id;
 		this.table	= tables;
 	}
-	@Override
+	
 	public void create(FoodRestaurant food) {
-		// TODO Auto-generated method stub
+		
+	}
+
+	public void read(List<FoodRestaurant> read) {
+
+	}
+
+	public void update(FoodRestaurant update) {
+		
+	}
+
+	public void delete(FoodRestaurant delete) {
+		
+	}
+	
+	public void read(ArrayList<BookingRestaurant> bookLists) {
 		
 	}
 
 	@Override
 	public void read() {
-		// TODO Auto-generated method stub
 		
 	}
-
 	@Override
 	public void update() {
-		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void delete() {
 		
 	}
 
 	@Override
-	public void delete() {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
 	public void create() {
-		// TODO Auto-generated method stub
 		
 	}
 
