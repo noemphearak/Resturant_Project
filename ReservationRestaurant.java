@@ -1,34 +1,44 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class ReservationRestaurant implements InterfaceRestaurant{
+	private List<BookingRestaurant> reservationLists = new ArrayList<BookingRestaurant>();
+	
+	public ReservationRestaurant() {}
+	
+	public void create(BookingRestaurant add) {
+
+	}
+	
+	public void read(ArrayList<BookingRestaurant> bookLists) {
+		
+	}
+
+	public void update(BookingRestaurant update) {
+		
+	}
+
+	public void delete(BookingRestaurant delete) {
+		
+	}
 
 	@Override
 	public void create() {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void read() {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void update() {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void delete() {
-		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
-	public void create(FoodRestaurant food) {
-		// TODO Auto-generated method stub
-		
-	}
-
 }
